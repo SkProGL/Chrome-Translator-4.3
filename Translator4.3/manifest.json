@@ -1,0 +1,46 @@
+{
+    "name": "Translator",
+    "description": "Ultimate Translator Edition",
+    "version": "4.3",
+    "manifest_version": 2,
+    "permissions": [
+        "https://*/*",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "commands": {
+        "copy": {
+            "suggested_key": {
+                "default": "Alt+Comma"
+            },
+            "description": "Copy translation"
+        },
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Alt+Y"
+            },
+            "description": "Open translator menu"
+        }
+    },
+    "web_accessible_resources": [
+        "icons/icon"
+    ],
+    "browser_action": {
+        "default_title": "Translator, Alt+Y",
+        "default_popup": "popup.html"
+    }
+}

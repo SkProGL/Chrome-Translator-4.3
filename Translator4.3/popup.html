@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body class='glass-ui'>
+  <div id='left-side'>
+    <button id='theme-changer'>
+      <img src='icons/theme.svg'></img>
+    </button>
+    <div></div>
+    <!-- <div style='color: var(--font-color);font-family: var(--font-family);'>From</div> -->
+    <select class='source-lang-dropdown' title='Choose source language' id='source-langs'>
+      <option value='auto'>AutoDetection: auto</option>
+    </select>
+
+    <p></p>
+    <!-- <div style='color: var(--font-color);font-family: var(--font-family);'>To</div> -->
+    <select class='target-lang-dropdown' title='Choose target language' id='target-langs'></select>
+    <button id='reverse'>
+      <img src='icons/reverse-button.svg'></img>
+    </button>
+    <p></p>
+    <div>
+      <button id='power-state'>.</button>
+      <button title='Dictionary mode' id='additional-info'>
+        <img src='icons/dictionary.svg'></img>
+      </button>
+      <button title='Tell phrase' id="speaker1">
+        <img src='icons/speaker_img.svg'></img>
+      </button>
+      <button title='Tell translation' id="speaker2">
+        <img src='icons/speaker_img.svg'></img>
+      </button>
+    </div>
+    <!-- <label id='selected-option'></label> -->
+    <p></p>
+    <input id='live-translation-input' title="use mousewheel to decrease/increase font" spellcheck='false'
+      placeholder='Ready to translate'></input>
+    <p></p>
+    <p></p>
+    <div id='detected-language'></div></input>
+    <label id='live-translation' title="Click to Copy">...</label>
+  </div>
+  <div style="overflow-y: auto;" id='right-side'>
+    <button id='google-link' title='use "Ready to translate" to search'>
+      <img src="icons/google.svg"></img>
+    </button>
+    <button id='youtube-link' title='use "Ready to translate" to search'>
+      <img src="icons/youtube.svg"></img>
+    </button>
+    <button id='google-translate-link' title='use "Ready to translate" to search'>
+      <img src="icons/google-translate.svg"></img>
+    </button>
+    <button id='github-link' title='use "Ready to translate" to search'>
+      <img src="icons/github.svg"></img>
+    </button>
+    <button id='shortcuts-link' style='color: var(--font-color);font-family: monospace;'>Keyboard
+    </button>
+    <div class='dictionary-container'>
+      <div class='dictionary-container-row'>
+        <div class='dictionary-container-row-title'>synonyms</div>
+        <div class='dictionary-container-row-item'> Do what you wish or maybe nothing is
+        </div>
+      </div>
+      <div class='dictionary-container-row'>
+        <div class='dictionary-container-row-title'>definition</div>
+        <div class='dictionary-container-row-item'>Oh godd this is so damn big I'm not sure if it has enough
+          space
+        </div>
+      </div>
+    </div>
+
+    <link rel='stylesheet' href='popup.css'>
+    <script type='text/javascript' src='default_popup.js'></script>
+    <script type='text/javascript' src='popup.js'></script>
+  </div>
+</body>
+
+</html>
